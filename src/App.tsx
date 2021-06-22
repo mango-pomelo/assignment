@@ -1,6 +1,7 @@
 import React from "react";
 import Box from "./components/Box/Box";
 import Grid from "./components/Grid/Grid";
+import {Card} from './components/Card/Card';
 
 function App() {
   return (
@@ -16,23 +17,28 @@ function App() {
         style={{ height: "10%" }}
       >
         <Grid item xs={4} >
-          <Box>Box 1</Box>
+          <Card boldedText='$4,141.52'
+          greyText='PPC spend'/>
         </Grid>
 
         <Grid item xs={4} >
-          <Box>Box 2</Box>
+          <Card boldedText='$25,777.67'
+            greyText='PPC sales'/>
         </Grid>
 
         <Grid item xs={4}>
-          <Box>Box 3</Box>
+          <Card boldedText='16.07%'
+            greyText='ACos(Advertising Cost of Sales)'/>
         </Grid>
 
         <Grid item xs={4}>
-          <Box>Box 4</Box>
+          <Card boldedText='$233,985,89'
+            greyText='Total Sales'/>
         </Grid>
 
         <Grid item xs={4}>
-          <Box>Box 5</Box>
+          <Card boldedText='1.77%'
+            greyText='Total Acos'/>
         </Grid>
       </Grid>
 
