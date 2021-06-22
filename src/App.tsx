@@ -3,7 +3,19 @@ import Box from "./components/Box/Box";
 import Grid from "./components/Grid/Grid";
 import {Card} from './components/Card/Card';
 import {Card2} from './components/Card2/Card2';
-import {Cardwithboxes} from './components/Cardwithboxes'
+import {Cardwithboxes} from './components/Cardwithboxes';
+import {TreeGridComponent} from '@syncfusion/ej2-react-treegrid';
+import '../src/App.css';
+import { ACoSData } from './datasource1';
+import { spendData } from './datasource2';
+import styled from 'styled-components';
+
+const Heading = styled.h2`
+    font-family : Inter;
+    font-weight : 600;
+    font-size: 18px;
+    line-height: 22px;
+`
 
 function App() {
   return (
@@ -70,11 +82,13 @@ function App() {
         style={{ height: "20%" }}
       >
         <Grid item xs={10} >
-          <Box>Box 31</Box>
+          <Heading>Highest ACoS campaigns</Heading>
+          <TreeGridComponent dataSource={ACoSData}></TreeGridComponent>
         </Grid>
 
         <Grid item xs={10} >
-          <Box>Box 32</Box>
+          <Heading>Highest spend keywords</Heading>
+          <TreeGridComponent dataSource={spendData}></TreeGridComponent>
         </Grid>
       </Grid>
 
