@@ -2,6 +2,8 @@ import React from "react";
 import Box from "./components/Box/Box";
 import Grid from "./components/Grid/Grid";
 import {Card} from './components/Card/Card';
+import {Card2} from './components/Card2/Card2';
+import {Cardwithboxes} from './components/Cardwithboxes'
 
 function App() {
   return (
@@ -49,15 +51,15 @@ function App() {
         style={{ height: "20%" }}
       >
         <Grid item xs={6} >
-          <Box>Box 21</Box>
+          <Cardwithboxes boldedText='Summary'/>
         </Grid>
 
         <Grid item xs={7} >
-          <Box>Box 22</Box>
+          <Card2 boldedText='Top 5 products by spend'/> 
         </Grid>
 
         <Grid item xs={7}>
-          <Box>Box 23</Box>
+          <Card2 boldedText='Top 5 products by sales'/>
         </Grid>
       </Grid>
 

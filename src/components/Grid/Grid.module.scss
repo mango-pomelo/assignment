@@ -28,7 +28,8 @@ $alignItems: (flex-start, flex-end, center);
   }
 
   &_item {
-    display: block;
+    height:100%;
+    display: grid;
   }
 
   @for $i from 1 to 21 {

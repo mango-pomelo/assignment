@@ -1,5 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
+import { PieChart, Pie, Sector, Cell, ResponsiveContainer } from 'recharts';
+
 
 interface CardProps{
     /**
@@ -19,6 +21,8 @@ const Layout = styled.div`
     flex-direction:column;
     align-items: flex-start
     padding: 16px;
+    font-size: 12px;
+    font-weight : 400;
 `
 
 const ColoredLine = () => (
@@ -50,7 +54,6 @@ export function Card({boldedText, greyText}:CardProps){
             <Layout>
                 {greyText}
             </Layout>
-            
         </Container>
 )
 }
