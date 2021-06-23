@@ -9,12 +9,18 @@ import '../src/App.css';
 import { ACoSData } from './datasource1';
 import { spendData } from './datasource2';
 import styled from 'styled-components';
+import Linechart from './components/LineChart';
 
 const Heading = styled.h2`
     font-family : Inter;
     font-weight : 600;
     font-size: 18px;
     line-height: 22px;
+`
+const Container = styled.article`
+    background: #ffffff;
+    box-shadow: 2px 2px 10px 5px rgba(0,0,0,0.1);
+    border-radius: 15px
 `
 
 function App() {
@@ -82,13 +88,17 @@ function App() {
         style={{ height: "20%" }}
       >
         <Grid item xs={10} >
-          <Heading>Highest ACoS campaigns</Heading>
-          <TreeGridComponent dataSource={ACoSData}></TreeGridComponent>
+          <Container>
+            <Heading>Highest ACoS campaigns</Heading>
+            <TreeGridComponent dataSource={ACoSData}></TreeGridComponent>
+          </Container>
         </Grid>
 
         <Grid item xs={10} >
-          <Heading>Highest spend keywords</Heading>
-          <TreeGridComponent dataSource={spendData}></TreeGridComponent>
+          <Container>
+            <Heading>Highest spend keywords</Heading>
+            <TreeGridComponent dataSource={spendData}></TreeGridComponent>
+          </Container>
         </Grid>
       </Grid>
 
@@ -99,7 +109,7 @@ function App() {
         style={{ height: "20%" }}
       >
         <Grid item xs={20} >
-          <Box>Box 41</Box>
+          <Linechart />
         </Grid>
       </Grid>
 

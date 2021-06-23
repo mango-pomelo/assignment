@@ -3,6 +3,7 @@ import { storiesOf } from '@storybook/react'
 import {Card2} from './Card2'
 import styled from 'styled-components'
 import { purple } from '@material-ui/core/colors'
+import Linechart from '../LineChart'
 
 const Container = styled.div`
     width: 200px;
@@ -17,6 +18,7 @@ const Container = styled.div`
 storiesOf('test/card2', module).add('Primary',()=>(
     <Container>
         <Card2 boldedText='Top 5 products by spend'/>
+        <Linechart></Linechart>
     </Container>
 
 
