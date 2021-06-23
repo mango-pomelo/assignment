@@ -11,8 +11,6 @@ interface CardwithboxesProps{
 }
 
 const Container = styled.article`
-    width: 300px;
-    height: 240px;
     background: #ffffff;
     box-shadow: 2px 2px 10px 5px rgba(0,0,0,0.1);
     border-radius: 15px;

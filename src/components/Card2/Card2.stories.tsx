@@ -6,10 +6,10 @@ import { purple } from '@material-ui/core/colors'
 import Linechart from '../LineChart'
 
 const Container = styled.div`
-    width: 200px;
-    height: 200px;
     display: flex;
     flex-direction: column;
+    height: 5vh;
+    width:10vw;
 `
 
 
@@ -18,7 +18,6 @@ const Container = styled.div`
 storiesOf('test/card2', module).add('Primary',()=>(
     <Container>
         <Card2 boldedText='Top 5 products by spend'/>
-        <Linechart></Linechart>
     </Container>
 
 

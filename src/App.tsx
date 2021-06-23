@@ -20,7 +20,23 @@ const Heading = styled.h2`
 const Container = styled.article`
     background: #ffffff;
     box-shadow: 2px 2px 10px 5px rgba(0,0,0,0.1);
-    border-radius: 15px
+    border-radius: 15px;
+`
+const Container2 = styled.article`
+    background: #ad49d8;
+    box-shadow: 2px 2px 10px 5px rgba(0,0,0,0.1);
+    border-radius: 15px;
+    display: flex;
+    justifyContent: center;
+    flex-direction: column;
+`
+
+const Image = styled.img`
+    height :45px;
+    object-fit:cover;
+    width:45px;
+    margin-top:12px;
+    margin-left:20px;
 `
 
 function App() {
@@ -65,8 +81,7 @@ function App() {
       <Grid
         container
         spacing="sm"
-        alignItems="center"
-        style={{ height: "20%" }}
+        style={{ height: "22%" }}
       >
         <Grid item xs={6} >
           <Cardwithboxes boldedText='Summary'/>
@@ -85,7 +100,7 @@ function App() {
         container
         spacing="sm"
         alignItems="center"
-        style={{ height: "20%" }}
+        style={{ height: "33%" }}
       >
         <Grid item xs={10} >
           <Container>
@@ -106,7 +121,7 @@ function App() {
         container
         spacing="sm"
         alignItems="center"
-        style={{ height: "20%" }}
+        style={{ height: "35%" }}
       >
         <Grid item xs={20} >
           <Linechart />
@@ -117,10 +132,22 @@ function App() {
         container
         spacing="sm"
         alignItems="center"
-        style={{ height: "20%" }}
+        style={{ height: "7%" }}
       >
         <Grid item xs={20} >
-          <Box>Box add</Box>
+          <Container2>
+            <div
+              style={{
+                display: "flex",
+                justifyContent: "center",
+                alignItems: "center"
+              }}
+      >
+            <Image src='https://image.flaticon.com/icons/png/512/983/983952.png'
+              alt="cur" className="center"
+              />
+              </div>
+          </Container2>
         </Grid>
       </Grid>
     </div>
