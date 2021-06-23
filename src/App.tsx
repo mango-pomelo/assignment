@@ -30,6 +30,14 @@ const Container2 = styled.article`
     justifyContent: center;
     flex-direction: column;
 `
+const Container3 = styled.article`
+    background: #ffffff;
+    display: flex;
+    border-radius: 15px;
+    justifyContent: center;
+    flex-direction: column;
+    box-shadow: 2px 2px 10px 5px rgba(0,0,0,0);
+`
 
 const Image = styled.img`
     height :45px;
@@ -100,7 +108,7 @@ function App() {
         container
         spacing="sm"
         alignItems="center"
-        style={{ height: "33%" }}
+        style={{ height: "27%" }}
       >
         <Grid item xs={10} >
           <Container>
@@ -121,10 +129,15 @@ function App() {
         container
         spacing="sm"
         alignItems="center"
-        style={{ height: "35%" }}
+
+        style={{ height: "33%" }}
       >
-        <Grid item xs={20} >
+        <Grid item xs={20}>
+          <Container3><div style={{display: 'flex',  justifyContent:'center', alignItems:'center',boxShadow:"none" }}>
           <Linechart />
+            </div></Container3>
+          
+
         </Grid>
       </Grid>
 

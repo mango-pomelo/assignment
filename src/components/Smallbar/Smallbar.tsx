@@ -34,7 +34,7 @@ const Num = styled.h2`
     font-size: 16px;
     line-height: 22px;
     text-align:right;
-    margin-right:10px;
+    margin-left:auto;
 `
 
 const Image = styled.img`
